@@ -73,7 +73,7 @@ st.markdown("""
   }
 </style>""", unsafe_allow_html=True)
 # Read Data
-display_df = pd.read_csv('/data/ppint_pa_filtered_streamlit.txt', sep='\t')
+display_df = pd.read_csv('data/ppint_pa_filtered_streamlit.txt', sep='\t')
 display_df.drop(columns = ['int_id', 'unit_id', 'biounit', 'pdb_id'], inplace=True)
 
 # Fix Table
