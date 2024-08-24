@@ -68,8 +68,8 @@ def download_df():
 original_title = '<p style="font-family:sans-serif; color:#5E2750; font-size: 35px; font-weight:bold">PASID:  Pseudomonas Aeruginosa Structural Information Database</p>'
 st.markdown(original_title, unsafe_allow_html=True)
 
-biofilm_proteins = pd.read_csv('/Users/fatmacankara/Desktop/PhD/__Thesis__/PASID/data/biofilm_proteins_string_mapped.txt', sep='\t')
-hmi_sub = pd.read_csv('/Users/fatmacankara/Desktop/PhD/__Thesis__/PASID/data/hmi_sub_with_identifiers.tsv', sep='\t')
+biofilm_proteins = pd.read_csv('/data/biofilm_proteins_string_mapped.txt', sep='\t')
+hmi_sub = pd.read_csv('/data/hmi_sub_with_identifiers.tsv', sep='\t')
 
 
 selection = st.selectbox('Filter by', ("Filter by Pseudomonas Identifier", "Filter by Human Identifier"))
