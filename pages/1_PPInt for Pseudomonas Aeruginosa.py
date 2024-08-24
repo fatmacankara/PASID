@@ -8,7 +8,6 @@ import warnings
 from st_aggrid import AgGrid, GridOptionsBuilder, JsCode, GridUpdateMode
 
 import streamlit.components.v1 as components
-components.html("PASID")
 
 def download_button(object_to_download, download_filename):
     """
@@ -74,7 +73,7 @@ st.markdown("""
   }
 </style>""", unsafe_allow_html=True)
 # Read Data
-display_df = pd.read_csv('/Users/fatmacankara/Desktop/PhD/__Thesis__/PASID/data/ppint_pa_filtered_streamlit.txt', sep='\t')
+display_df = pd.read_csv('/data/ppint_pa_filtered_streamlit.txt', sep='\t')
 display_df.drop(columns = ['int_id', 'unit_id', 'biounit', 'pdb_id'], inplace=True)
 
 # Fix Table
